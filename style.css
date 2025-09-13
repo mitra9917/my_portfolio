@@ -368,7 +368,7 @@ section{
 
 .btn-color-1:hover{
     background-color: black;
-    color:var(--text-color);
+    color:var(--text-color)
 }
 
 /* ABOUT SECTION */

@@ -1,7 +1,8 @@
 @media screen and (max-width: 1400px) {
   #profile {
-    height: 83vh;
+    height: auto; /* Changed from 83vh */
     margin-bottom: 6rem;
+    padding-top: 2rem; /* Added */
   }
   .about-containers {
     flex-wrap: wrap;
@@ -33,15 +34,14 @@
   section,
   .section-container {
     height: fit-content !important;
-  }
-  section {
-    margin: 0 5% !important;
+    margin: 0 2% !important; /* Changed from 5% */
+    padding: 4rem 0 !important; /* Added */
   }
   .section__pic-container {
-  width: 275px !important;
-  height: 275px !important;
-  margin: 0 auto 2rem !important;
-}
+    width: 275px !important;
+    height: 275px !important;
+    margin: 0 auto 2rem !important;
+  }
   .about-containers {
     margin-top: 0 !important;
   }
@@ -53,6 +53,12 @@
   .mobile-theme-toggle {
     display: flex !important;
   }
+  
+  /* Added for text container */
+  .text-container {
+    width: 90% !important;
+    text-align: center !important;
+  }
 }
 
 @media screen and (min-width: 1201px) {
@@ -61,14 +67,41 @@
   }
 }
 
+@media screen and (max-width: 900px) {
+  /* Added new breakpoint */
+  #profile {
+    gap: 2rem !important;
+    height: auto !important;
+  }
+  
+  .section__text__p2 {
+    font-size: 1.5rem !important;
+  }
+  
+  .title {
+    font-size: 2.5rem !important;
+  }
+  
+  .about-containers {
+    flex-direction: column !important;
+    gap: 1rem !important;
+  }
+  
+  .details-container {
+    width: 100% !important;
+  }
+}
+
 @media screen and (max-width: 600px) {
   #contact,
   footer {
-    height: 40vh !important;
+    height: auto !important; /* Changed from 40vh */
+    padding: 2rem 0 !important; /* Added */
   }
   #profile {
-    height: 83vh !important;
+    height: auto !important; /* Changed from 83vh */
     margin-bottom: 0 !important;
+    gap: 1rem !important; /* Added */
   }
   article {
     font-size: 1rem !important;
@@ -101,8 +134,8 @@
     text-align: center !important;
   }
   .section__pic-container {
-    width: auto !important;
-    height: 46vw !important;
+    width: 200px !important; /* Changed from auto */
+    height: 200px !important; /* Changed from 46vw */
     justify-content: center !important;
   }
   .section__text__p2 {
@@ -112,9 +145,8 @@
     font-size: 2rem !important;
   }
   .text-container p{
-    text-align: justify !important;
-    align-items: center !important;
-    justify-content: center !important;
+    text-align: center !important; /* Changed from justify */
+    padding: 0 1rem !important; /* Added */
   }
   
   .mobile-theme-toggle {
@@ -126,31 +158,45 @@
     width: 35px !important;
     height: 35px !important;
   }
+  
+  /* Project adjustments */
+  .details-container.color-container {
+    width: 100% !important;
+    margin: 1rem 0 !important;
+  }
+  
+  .project-img {
+    width: 100% !important;
+    height: auto !important;
+  }
+  
+  /* Contact section adjustments */
+  .contact-info-upper-container {
+    flex-direction: column !important;
+    gap: 1rem !important;
+    padding: 1rem !important;
+  }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 400px) {
+  /* Added for very small screens */
   section {
-  margin: 0 1vw !important;
-  padding: 2vw 0 !important;
-}
-.section__pic-container {
-  width: 80vw !important;
-  height: 80vw !important;
-  min-width: 120px !important;
-  min-height: 120px !important;
-  max-width: 95vw !important;
-  max-height: 95vw !important;
-}
-.about-containers {
-  flex-direction: column !important;
-  align-items: center !important;
-  margin-left: 0 !important;
-  gap: 1rem !important;
-}
-.details-container {
-  width: 90vw !important;
-  margin: 1rem 0 !important;
-  align-items: center !important;
-  justify-content: center !important;
-}
+    margin: 0 1vw !important;
+    padding: 2vw 0 !important;
+  }
+  
+  .section__pic-container {
+    width: 70vw !important;
+    height: 70vw !important;
+  }
+  
+  .btn {
+    width: 120px !important;
+    margin: 0.25rem !important;
+  }
+  
+  .contact-info-container {
+    flex-direction: column !important;
+    text-align: center !important;
+  }
 }
