@@ -16,6 +16,7 @@
   --btn-color-2-text: #000000;
   --btn-color-2-border: #000000;
   --contact-bg: #fafafa;
+  --arrow-color: #000;
 }
 
 [data-theme="dark"] {
@@ -31,6 +32,7 @@
   --btn-color-2-text: #e0e0e0;
   --btn-color-2-border: #bb86fc;
   --contact-bg: #1a1a1a;
+  --arrow-color: #fff;
 }
 
 *{
@@ -365,7 +367,8 @@ section{
 }
 
 .btn-color-1:hover{
-    background-color: black;;
+    background-color: black;
+    color:var(--text-color);
 }
 
 /* ABOUT SECTION */
@@ -398,6 +401,7 @@ section{
     position:absolute;
     right:-5rem;
     bottom:2.5rem;
+    color: var(--arrow-color);
 }
 
 .text-container{
