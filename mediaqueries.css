@@ -78,7 +78,7 @@
   
   .about-containers {
     flex-direction: column !important;
-    gap: 1rem !important;
+    gap: 0rem !important;
   }
   
   .details-container {
@@ -175,8 +175,7 @@
 @media (max-width: 400px) {
   /* Added for very small screens */
   section {
-    margin: 0 1vw !important;
-    padding: 2vw 0 !important;
+    padding: 10vw 0 !important;
   }
   
   .section__pic-container {
