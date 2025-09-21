@@ -25,7 +25,6 @@
   --secondary-text-color: #a0a0a0;
   --border-color: #444444;
   --card-bg: #1e1e1e;
-  --nav-bg: #1a1a1a;
   --btn-color-1-bg: #bb86fc;
   --btn-color-1-text: #000000;
   --btn-color-2-bg: #1e1e1e;
@@ -69,7 +68,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 60px;
-  background-color: var(--nav-bg);
+  background-color: var(--bg-color);
   transition: background-color 0.3s;
 }
 
@@ -236,7 +235,7 @@ a:hover {
 
 /* Sections */
 section {
-  padding: 4vh 2vw;
+  padding: 9vh 3vw;
   margin: 0 auto;
   max-width: 1200px;
   width: 100%;
@@ -334,6 +333,15 @@ section {
   object-fit: contain;
 }
 
+.appcon {
+    border: 3px solid #a0a0a0;
+    border-radius: 50%;
+}
+
+.appcon:hover {
+    border-color: #6200ea; /* or any color you prefer */
+}
+
 /* Buttons */
 .btn {
   height: 50px;
@@ -383,8 +391,7 @@ section {
 
 .about-containers {
   gap: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+
   flex-wrap: wrap;
   justify-content: center;
   display: flex;
@@ -424,7 +431,7 @@ section {
 }
 
 .about-page-container {
-  margin-top: 70px;
+  margin-top: 20px;
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
@@ -512,7 +519,7 @@ article .icon {
   justify-content: center;
   flex-direction: column;
   min-height: 40vh;
-  padding: 2rem 0;
+  padding: 10rem 0;
 }
 
 .contact-info-upper-container {

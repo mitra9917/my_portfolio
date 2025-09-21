@@ -34,13 +34,10 @@
   section,
   .section-container {
     height: fit-content !important;
-    margin: 0 2% !important; /* Changed from 5% */
-    padding: 4rem 0 !important; /* Added */
   }
   .section__pic-container {
     width: 275px !important;
     height: 275px !important;
-    margin: 0 auto 2rem !important;
   }
   .about-containers {
     margin-top: 0 !important;
